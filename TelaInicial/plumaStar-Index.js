@@ -25,9 +25,9 @@ const limparSelecoes1 = () => {
   let imagemSapato1 = document.querySelector("#imagemSapato1");
   imagemSapato1.innerHTML = "";
 
-   //limpar opção de quantidade escolhida
-   let select = document.getElementById("opcoes1");
-   select.value = "---";
+  //limpar opção de quantidade escolhida
+  let select = document.getElementById("opcoes1");
+  select.value = "---";
 }
 
 //FECHAR
@@ -69,11 +69,6 @@ document.addEventListener('click', (e) => {
       imagem.src = '/lancamentos/img-Index/PLUMASTAR/azulmarinho.png';
       el.style.backgroundColor = "#313549";
     }
-    if (el.classList.contains("bege1")) {
-      //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/amareloouro.png';
-      imagem.src = '/lancamentos/img-Index/PLUMASTAR/bege.png';
-      el.style.backgroundColor = "#AF79CF";
-    }
     if (el.classList.contains("branca1")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/laranja.png';
       imagem.src = '/lancamentos/img-Index/PLUMASTAR/branca.png';
@@ -105,7 +100,7 @@ document.addEventListener('click', (e) => {
       el.style.backgroundColor = "black";
     }
 
-    if (el.classList.contains("roxa1")) {
+    if (el.classList.contains("lanvada1")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/verdemilitar.png';
       imagem.src = '/lancamentos/img-Index/PLUMASTAR/roxa.png';
       el.style.backgroundColor = "#A973C9";
@@ -140,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Lógica para definir valores no sessionStorage
   const definirValoresSessionStorage6 = () => {
- 
+
 
     // Ouvinte de evento para os botões de modelos (cores)
     const botaoModelos = document.querySelectorAll(".cores1");
@@ -167,13 +162,13 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  const NomeValorProduto=()=>{
-      // Dados do botão "Concluir"
-      const botaoEnviar1= document.querySelector(".concluir1");
-      const valorBotaoEnviar1 = parseFloat(botaoEnviar1.getAttribute('data-value2'));
-      const textoBotaoEnviar1 = botaoEnviar1.getAttribute('data-text2');
-      sessionStorage.setItem('valorProduto', valorBotaoEnviar1);
-      sessionStorage.setItem('nomeProduto', textoBotaoEnviar1);
+  const NomeValorProduto = () => {
+    // Dados do botão "Concluir"
+    const botaoEnviar1 = document.querySelector(".concluir1");
+    const valorBotaoEnviar1 = parseFloat(botaoEnviar1.getAttribute('data-value2'));
+    const textoBotaoEnviar1 = botaoEnviar1.getAttribute('data-text2');
+    sessionStorage.setItem('valorProduto', valorBotaoEnviar1);
+    sessionStorage.setItem('nomeProduto', textoBotaoEnviar1);
   }
 
   const concluirCompra6 = () => {
@@ -184,14 +179,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!coresSelecionadas && !tamanhoSelecionado && opcaoSelecionada === '---') {
       alert("Para prosseguir, escolha: cor, tamanho e quantidade");
-      return false; 
+      return false;
     }
     // Redirecionar para a próxima página
     //window.location.href = '/PedeAlgodao/CARRINHO/comprasFeitas.html';
     window.location.href = '/lancamentos/compras/comprasFeitas.html';
   }
   definirValoresSessionStorage6();
-  document.querySelector(".concluir1").addEventListener("click", ()=>{
+  document.querySelector(".concluir1").addEventListener("click", () => {
     NomeValorProduto();
     concluirCompra6();
   })
