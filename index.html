@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pé de Algodão</title>
+    <link rel="stylesheet" href="TelaInicial/style-Index.css">
+
+    <script src="TelaInicial/plumaNuvem.js" defer></script>
+    <script src="TelaInicial/plumaStar-Index.js" defer></script>
+    <script src="TelaInicial/plumaConfort-Index.js" defer></script>
+    <script src="TelaInicial/plumaKids-Index.js" defer></script>
+    <script src="TelaInicial/plumaPlataforma-Index.js" defer></script>
+    <script src="TelaInicial/plumaSaltinho-Index.js" defer></script>
+    <script src="TelaInicial/plumaMocassim-Index.js" defer></script>
+    <script src="TelaInicial/parahomens-Index.js" defer></script>
+</head>
+
+<body>
+    <img src="img-Index/LOGO.png" alt="" class="logo">
+    <section>
+        <!--PLUMA NUVEM-->
+        <h1 class="tituloA">PLUMA NUVEM - R$ 120,00</h1>
+        <p class="textoA1">Perfeita para aproveitar os dias de calor, o modelo completa os looks de verão com mais
+            conforto por conta da
+            sua composição em em EVA, garantindo o impacto na suas pernas e pés, os chinelos Pé de Pluma garanti um
+            visual superdivertido.</p>
+
+        <img src="img-Index/PLUMANUVEM/plumanuvem.png" alt="" class="produto">
+
+        <div class="produtos">
+            <button type="button" onclick="comprar()" class="adquirir">LANÇAMENTOS</button>
+        </div>
+
+        <div id="mostrarTudo" style="display: none;">
+
+            <button type="button" onclick="cancelar()" class="cancelar">CANCELAR</button>
+
+            <p class="TextCorTamanhoOpcao"><strong>COR</strong></p>
+            <div id="cor">
+                <button type="button" class="bege cores" value="LILAS">LILÁS</button>
+                <button type="button" class="preto cores" value="PRETO">PRETO</button>
+                <button type="button" class="amareloouro cores" value="AMARELO OURO">AMARELO OURO</button>
+                <button type="button" class="laranja cores" value="LARANJA">LARANJA</button>
+                <button type="button" class="rosabebe cores" value="ROSA BEBE">ROSA BEBÊ</button>
+                <button type="button" class="branco cores" value="BRANCA">BRANCA</button>
+                <button type="button" class="azulmarinho cores" value="AZUL MARINHO">AZUL MARINHO</button>
+                <button type="button" class="azulclaro cores" value="AZUL BEBE">AZUL BEBÊ</button>
+                <button type="button" class="verdemilitar cores" value="VERDE">VERDE MILITAR</button>
+                <button type="button" class="nude cores" value="NUDE">NUDE</button>
+                <button type="button" class="neon cores" value="NEON">NEON</button>
+            </div>
+
+            <div id="imagemSapato"></div>
+
+            <p class="TextCorTamanhoOpcao"><strong>TAMANHO</strong></p>
+            <div id="tamanho">
+                <button type="button" class="tamanhos" value="33/34">33/34</button>
+                <button type="button" class="tamanhos" value="35/36">35/36</button>
+                <button type="button" class="tamanhos" value="37/38">37/38</button>
+                <button type="button" class="tamanhos" value="39/40">39/40</button>
+                <button type="button" class="tamanhos" value="41/42">41/42</button>
+                <button type="button" class="tamanhos" value="43/44">43/44</button>
+            </div>
+
+            <div id="opcao">
+                <label for=""><p class="TextCorTamanhoOpcao"><strong>QUANTIDADE</strong></p></label>
+                <select id="opcoes" name="opcao">
+                    <option>---</option>
+                    <option value="01 PAR">01 PAR</option>
+                    <option value="02 PARES">02 PARES</option>
+                    <option value="03 PARES">03 PARES</option>
+                    <option value="04 PARES">04 PARES</option>
+                    <option value="05 PARES">05 PARES</option>
+                    <option value="06 PARES">06 PARES</option>
+                    <option value="07 PARES">07 PARES</option>
+                    <option value="08 PARES">08 PARES</option>
+                    <option value="09 PARES">09 PARES</option>
+                    <option value="10 PARES">10 PARES</option>
+                </select>
+            </div>
+            <div class="botConcluinr">
+                <button type="button" class="concluir" data-text1="PLUMA NUVEM" data-value1="120.00">
+                    CONCLUIR
+                </button>
+            </div>
+        </div>
+
+        <!--PARTE DA PLUMA STAR -->
+        <h1 class="tituloA  tituloA2">PLUMA STAR - R$ 180,00</h1>
+        <p class="textoA1">A PLUMA STAR é a sandalia queridinha das estrelas.</p>
+        <img src="img-Index/PLUMASTAR/plumastar.png" alt="" class="produto">
+
+        <div class="produtos">
+            <button type="button" onclick="comprar1()" class="adquirir1">LANÇAMENTOS</button>
+        </div>
+
+        <div id="mostrarTudo1" style="display: none;">
+
+            <button type="button" onclick="cancelar1()" class="cancelar1">CANCELAR</button>
+
+            <p class="TextCorTamanhoOpcao"><strong>COR</strong></p>
+            <div id="cor">
+                <button type="button" class="azul1 cores1" value="AZUL">AZUL</button>
+                <button type="button" class="azulmarinho1 cores1" value="AZUL MARINHO ">AZUL MARINHO</button>
+                <button type="button" class="bege1 cores1" value="BEGE">BEGE</button>
+                <button type="button" class="branca1 cores1" value="BRANCA">BRANCA</button>
+                <button type="button" class="laranja1 cores1" value="LARANJA">LARANJA</button>
+                <button type="button" class="marrom1 cores1" value="MARROM">MARROM</button>
+                <button type="button" class="marromclaro1 cores1" value="MARROM CLARO">MARROM CLARO</button>
+                <button type="button" class="neon1 cores1" value="NEON">NEON</button>
+                <button type="button" class="preta1 cores1" value="PRETA">PRETA</button>
+                <button type="button" class="roxa1 cores1" value="ROXA">ROXA</button>
+                <button type="button" class="verdemilitar1 cores1" value="VERDE MILITAR">VERDE MILITAR</button>
+            </div>
+
+            <div id="imagemSapato1"></div>
+
+            <p class="TextCorTamanhoOpcao"><strong>TAMANHO</strong></p>
+            <div id="tamanho">
+                <button type="button" class="tamanhos1" value="33/34">33/34</button>
+                <button type="button" class="tamanhos1" value="35/36">35/36</button>
+                <button type="button" class="tamanhos1" value="37/38">37/38</button>
+                <button type="button" class="tamanhos1" value="39/40">39/40</button>
+                <button type="button" class="tamanhos1" value="41/42">41/42</button>
+                <button type="button" class="tamanhos1" value="43/44">43/44</button>
+
+            </div>
+
+            <div id="opcao">
+                <label for=""><p class="TextCorTamanhoOpcao"><strong>QUANTIDADE</strong></p></label>
+                <select id="opcoes1" name="opcao">
+                    <option>---</option>
+                    <option value="01 PAR">01 PAR</option>
+                    <option value="02 PARES">02 PARES</option>
+                    <option value="03 PARES">03 PARES</option>
+                    <option value="04 PARES">04 PARES</option>
+                    <option value="05 PARES">05 PARES</option>
+                    <option value="06 PARES">06 PARES</option>
+                    <option value="07 PARES">07 PARES</option>
+                    <option value="08 PARES">08 PARES</option>
+                    <option value="09 PARES">09 PARES</option>
+                    <option value="10 PARES">10 PARES</option>
+                </select>
+            </div>
+            <div class="botConcluinr">
+                <button type="button" class="concluir1" data-text2="PLUMA STAR" data-value2="180.00">
+                    CONCLUIR
+                </button>
+            </div>
+        </div>
+
+
+        <!--PLUMA CONFORT  -->
+        <h1 class="tituloA  tituloA3">PLUMA CONFORT - R$ 120,00</h1>
+        <p class="textoA1">LEVINHO / CONFORTÁVEL / CHEIO DE ESTILO
+            <br><br>Super elegante e Confortável , combinando com qualquer roupa, Estilo e ocasião, levando o conforto
+            no dia a dia.
+        </p>
+        <img src="img-Index/PLUMACONFORT/plumaconfort.png" alt="" class="produto">
+
+        <div class="produtos">
+            <button type="button" onclick="comprar2()" class="adquirir2">LANÇAMENTOS</button>
+        </div>
+
+        <div id="mostrarTudo2" style="display: none;">
+
+            <button type="button" onclick="cancelar2()" class="cancelar2">CANCELAR</button>
+
+            <p class="TextCorTamanhoOpcao"><strong>COR</strong></p>
+            <div id="cor">
+                <button type="button" class="amareloouro2 cores2" value="AMARELO OURO">AMARELO OURO</button>
+                <button type="button" class="azul2 cores2" value="AZUL">AZUL</button>
+                <button type="button" class="azulmarinho2 cores2" value="AZUL MARINHO">AZUL MARINHO</button>
+                <button type="button" class="branco2 cores2" value="BRANCA">BRANCA</button>
+                <button type="button" class="marromclaro2 cores2" value="MARROM CLARO">MARROM CLARO</button>
+                <button type="button" class="neon2 cores2" value="NEON">NEON</button>
+                <button type="button" class="nude2 cores2" value="NUDE">NUDE</button>
+                <button type="button" class="preto2 cores2" value="PRETA">PRETA</button>
+                <button type="button" class="rosa2 cores2" value="ROSA">ROSA</button>
+                <button type="button" class="verdemilitar2 cores2" value="VERDE MILITAR">VERDE MILITAR</button>
+            </div>
+
+            <div id="imagemSapato2"></div>
+
+            <p class="TextCorTamanhoOpcao"><strong>TAMANHO</strong></p>
+            <div id="tamanho">
+                <button type="button" class="tamanhos2" value="33/34">33/34</button>
+                <button type="button" class="tamanhos2" value="35/36">35/36</button>
+                <button type="button" class="tamanhos2" value="37/38">37/38</button>
+                <button type="button" class="tamanhos2" value="39/40">39/40</button>
+            </div>
+
+            <div id="opcao">
+                <label for=""><p class="TextCorTamanhoOpcao"><strong>QUANTIDADE</strong></p></label>
+                <select id="opcoes2" name="opcao">
+                    <option>---</option>
+                    <option value="01 PAR">01 PAR</option>
+                    <option value="02 PARES">02 PARES</option>
+                    <option value="03 PARES">03 PARES</option>
+                    <option value="04 PARES">04 PARES</option>
+                    <option value="05 PARES">05 PARES</option>
+                    <option value="06 PARES">06 PARES</option>
+                    <option value="07 PARES">07 PARES</option>
+                    <option value="08 PARES">08 PARES</option>
+                    <option value="09 PARES">09 PARES</option>
+                    <option value="10 PARES">10 PARES</option>
+                </select>
+            </div>
+            <div class="botConcluinr">
+                <button type="button" class="concluir2" data-text3="PLUMA CONFORT" data-value3="120.00">
+                    CONCLUIR
+                </button>
+            </div>
+        </div>
+
+
+
+        <!--PLUMA KIDS-->
+        <h1 class="tituloA  tituloA4">PLUMA KIDS - R$ 120,00</h1>
+        <p class="textoA1">Pensando também nas Crianças, a Pé de Pluma cria números menores que vai da numeração 25/26
+            ao 31/32, assim a diversão é garantida :)</p>
+        <img src="img-Index/PLUMAKIDS/plumakids.png" alt="" class="produto">
+
+        <div class="produtos">
+            <button type="button" onclick="comprar3()" class="adquirir3">LANÇAMENTOS</button>
+        </div>
+
+        <div id="mostrarTudo3" style="display: none;">
+
+            <button type="button" onclick="cancelar3()" class="cancelar3">CANCELAR</button>
+
+            <p class="TextCorTamanhoOpcao"><strong>COR</strong></p>
+            <div id="cor">
+                <button type="button" class="neon3 cores3" value="NEON">NEON</button>
+                <button type="button" class="rosa3 cores3" value="ROSA">ROSA</button>
+                <button type="button" class="roxa3 cores3" value="ROXA">ROXA</button>
+                <button type="button" class="vermelhaclara3 cores3" value="VERMELHO CLARO">VERMELHO CLARO</button>
+            </div>
+
+            <div id="imagemSapato3"></div>
+
+            <p class="TextCorTamanhoOpcao"><strong>TAMANHO</strong></p>
+            <div id="tamanho">
+                <button type="button" class="tamanhos3" value="25/26">25/26</button>
+                <button type="button" class="tamanhos3" value="27/28">27/28</button>
+                <button type="button" class="tamanhos3" value="29/30">29/30</button>
+                <button type="button" class="tamanhos3" value="31/32">31/32</button>
+            </div>
+
+            <div id="opcao">
+                <label for=""><p class="TextCorTamanhoOpcao"><strong>QUANTIDADE</strong></p></label>
+                <select id="opcoes3" name="opcao">
+                    <option>---</option>
+                    <option value="01 PAR">01 PAR</option>
+                    <option value="02 PARES">02 PARES</option>
+                    <option value="03 PARES">03 PARES</option>
+                    <option value="04 PARES">04 PARES</option>
+                    <option value="05 PARES">05 PARES</option>
+                    <option value="06 PARES">06 PARES</option>
+                    <option value="07 PARES">07 PARES</option>
+                    <option value="08 PARES">08 PARES</option>
+                    <option value="09 PARES">09 PARES</option>
+                    <option value="10 PARES">10 PARES</option>
+                </select>
+            </div>
+            <div class="botConcluinr">
+                <button type="button" class="concluir3" data-text4="PLUMA KIDS" data-value4="120.00">
+                    CONCLUIR
+                </button>
+            </div>
+        </div>
+
+
+        <!--PLUMA PLATAFORMA-->
+        <h1 class="tituloA  tituloA5">PLUMA PLATAFORMA - R$ 139,00</h1>
+        <p class="textoA1">Agora no modelo de Dedo, Sandália Nuvem e Magnética vem com um saltinho Plataforma super
+            elegante e Confortável, combinando com qualquer roupa, Estilo e ocasião.</p>
+        <img src="img-Index/PLUMAPLATAFORMA/plumaplataforma.png" alt="" class="produto">
+
+        <div class="produtos">
+            <button type="button" onclick="comprar4()" class="adquirir4">LANÇAMENTOS</button>
+        </div>
+
+        <div id="mostrarTudo4" style="display: none;">
+
+            <button type="button" onclick="cancelar4()" class="cancelar4">CANCELAR</button>
+
+            <p class="TextCorTamanhoOpcao"><strong>COR</strong></p>
+            <div id="cor">
+
+                <button type="button" class="azulbebe4 cores4" value="AZUL BEBÊ">AZUL BEBÊ</button>
+                <button type="button" class="branca4 cores4" value="BRANCA">BRANCA</button>
+                <button type="button" class="neon4 cores4" value="NEON">NEON</button>
+                <button type="button" class="nude4 cores4" value="NUDE">NUDE</button>
+                <button type="button" class="preta4 cores4" value="PRETA">PRETA</button>
+                <button type="button" class="rosa4 cores4" value="ROSA">ROSA</button>
+                <button type="button" class="rosaescuro4 cores4" value="ROSA ESCURO">ROSA ESCURO</button>
+                <button type="button" class="roxo4 cores4" value="ROXO">ROXO</button>
+            </div>
+
+            <div id="imagemSapato4"></div>
+
+            <p class="TextCorTamanhoOpcao"><strong>TAMANHO</strong></p>
+            <div id="tamanho">
+                <button type="button" class="tamanhos4" value="33/34">33/34</button>
+                <button type="button" class="tamanhos4" value="35/36">35/36</button>
+                <button type="button" class="tamanhos4" value="37/38">37/38</button>
+                <button type="button" class="tamanhos4" value="39/40">39/40</button>
+
+
+            </div>
+
+            <div id="opcao">
+                <label for=""><p class="TextCorTamanhoOpcao"><strong>QUANTIDADE</strong></p></label>
+                <select id="opcoes4" name="opcao">
+                    <option>---</option>
+                    <option value="01 PAR">01 PAR</option>
+                    <option value="02 PARES">02 PARES</option>
+                    <option value="03 PARES">03 PARES</option>
+                    <option value="04 PARES">04 PARES</option>
+                    <option value="05 PARES">05 PARES</option>
+                    <option value="06 PARES">06 PARES</option>
+                    <option value="07 PARES">07 PARES</option>
+                    <option value="08 PARES">08 PARES</option>
+                    <option value="09 PARES">09 PARES</option>
+                    <option value="10 PARES">10 PARES</option>
+                </select>
+            </div>
+            <div class="botConcluinr">
+                <button type="button" class="concluir4" data-text5="PLUMA PLATAFORMA" data-value5="139.00">
+                    CONCLUIR
+                </button>
+            </div>
+        </div>
+
+
+        <!--PLUMA SALTINHO-->
+        <h1 class="tituloA  tituloA6">PLUMA SALTINHO - R$ 139,00</h1>
+        <p class="textoA1">Agora no modelo de Dedo, Sandália Nuvem e Magnética vem com um saltinho super elegante e
+            Confortável, combinando com qualquer roupa, estilo e ocasião. </p>
+        <img src="img-Index/PLUMASALTINHO/plumasaltinho.png" alt="" class="produto">
+
+        <div class="produtos">
+            <button type="button" onclick="comprar5()" class="adquirir5">LANÇAMENTOS</button>
+        </div>
+
+        <div id="mostrarTudo5" style="display: none;">
+
+            <button type="button" onclick="cancelar5()" class="cancelar5">CANCELAR</button>
+
+            <p class="TextCorTamanhoOpcao"><strong>COR</strong></p>
+            <div id="cor">
+                <button type="button" class="azulbebe5 cores5" value="AZUL BEBE">AZUL BEBÊ</button>
+                <button type="button" class="branco5 cores5" value="BRANCA">BRANCA</button>
+                <button type="button" class="laranjaclaro5 cores5" value="LARANJA CLARO">LARANJA CLARO</button>
+                <button type="button" class="neon5 cores5" value="NEON">NEON</button>
+                <button type="button" class="preta5 cores5" value="PRETA">PRETA</button>
+                <button type="button" class="rosa5 cores5" value="ROSA">ROSA</button>
+                <button type="button" class="vermelho5 cores5" value="VERMELHO">VERMELHO</button>
+
+            </div>
+
+            <div id="imagemSapato5"></div>
+
+            <p class="TextCorTamanhoOpcao"><strong>TAMANHO</strong></p>
+            <div id="tamanho">
+                <button type="button" class="tamanhos5" value="33/34">33/34</button>
+                <button type="button" class="tamanhos5" value="35/36">35/36</button>
+                <button type="button" class="tamanhos5" value="37/38">37/38</button>
+                <button type="button" class="tamanhos5" value="39/40">39/40</button>
+
+
+            </div>
+
+            <div id="opcao">
+                <label for=""><p class="TextCorTamanhoOpcao"><strong>QUANTIDADE</strong></p></label>
+                <select id="opcoes5" name="opcao">
+                    <option>---</option>
+                    <option value="01 PAR">01 PAR</option>
+                    <option value="02 PARES">02 PARES</option>
+                    <option value="03 PARES">03 PARES</option>
+                    <option value="04 PARES">04 PARES</option>
+                    <option value="05 PARES">05 PARES</option>
+                    <option value="06 PARES">06 PARES</option>
+                    <option value="07 PARES">07 PARES</option>
+                    <option value="08 PARES">08 PARES</option>
+                    <option value="09 PARES">09 PARES</option>
+                    <option value="10 PARES">10 PARES</option>
+                </select>
+            </div>
+            <div class="botConcluinr">
+                <button type="button" class="concluir5" data-text6="PLUMA SALTINHO" data-value6="139.00">
+                    CONCLUIR
+                </button>
+            </div>
+        </div>
+
+
+        <!--PLUMA MOCASSIM -->
+        <h1 class="tituloA  tituloA7">PLUMA MOCASSIM - R$ 139,00</h1>
+        <p class="textoA1">Agora no modelo de Mocassim Pluma, Super elegante e Confortável , ideal para Área da Saúde,
+            Cabelereiros, Restaurantes e Profissionais que passam muito tempo em Pé. </p>
+        <img src="img-Index/PLUMAMOCASSIM/plumamocassim.jpeg" alt="" class="produto">
+
+        <div class="produtos">
+            <button type="button" onclick="comprar6()" class="adquirir6">LANÇAMENTOS</button>
+        </div>
+
+        <div id="mostrarTudo6" style="display: none;">
+
+            <button type="button" onclick="cancelar6()" class="cancelar6">CANCELAR</button>
+
+            <p class="TextCorTamanhoOpcao"><strong>COR</strong></p>
+            <div id="cor">
+
+                <button type="button" class="azulmarinho6 cores6" value="AZUL MARINHO">AZUL MARINHO</button>
+                <button type="button" class="azulpiscina6 cores6" value="AZUL PISCINA">AZUL PISCINA</button>
+                <button type="button" class="verdepiscina6 cores6" value="VERDE PISCINA">VERDE PISCINA</button>
+                <button type="button" class="branca6 cores6" value="BRANCA">BRANCA</button>
+                <button type="button" class="preto6 cores6" value="PRETO">PRETO</button>
+                <button type="button" class="rosa6 cores6" value="ROSA">ROSA</button>
+            </div>
+
+            <div id="imagemSapato6"></div>
+
+            <p class="TextCorTamanhoOpcao"><strong>TAMANHO</strong></p>
+            <div id="tamanho">
+                <button type="button" class="tamanhos6" value="33/34">33/34</button>
+                <button type="button" class="tamanhos6" value="35/36">35/36</button>
+                <button type="button" class="tamanhos6" value="37/38">37/38</button>
+                <button type="button" class="tamanhos6" value="39/40">39/40</button>
+
+            </div>
+
+            <div id="opcao">
+                <label for=""><p class="TextCorTamanhoOpcao"><strong>QUANTIDADE</strong></p></label>
+                <select id="opcoes6" name="opcao">
+                    <option>---</option>
+                    <option value="01 PAR">01 PAR</option>
+                    <option value="02 PARES">02 PARES</option>
+                    <option value="03 PARES">03 PARES</option>
+                    <option value="04 PARES">04 PARES</option>
+                    <option value="05 PARES">05 PARES</option>
+                    <option value="06 PARES">06 PARES</option>
+                    <option value="07 PARES">07 PARES</option>
+                    <option value="08 PARES">08 PARES</option>
+                    <option value="09 PARES">09 PARES</option>
+                    <option value="10 PARES">10 PARES</option>
+                </select>
+            </div>
+            <div class="botConcluinr">
+                <button type="button" class="concluir6" data-text7="PLUMA MOCASSIM" data-value7="139.00">
+                    CONCLUIR
+                </button>
+            </div>
+        </div>
+
+        <!--PARA HOMENS -->
+        <h1 class="tituloA  tituloA8">PARA HOMENS - R$ 120,00</h1>
+        <p class="textoA1">Mais conforto por conta da sua composição em em EVA, garantindo o impacto na suas pernas e
+            pés, os chinelos Pé de Pluma garanti um visual superdivertido. Sem contar o Estilo para os Homens de bom
+            gosto.</p>
+        <img src="img-Index/PARAHOMENS/parahomens.png" alt="" class="produto">
+
+        <div class="produtos">
+            <button type="button" onclick="comprar7()" class="adquirir7">LANÇAMENTOS</button>
+        </div>
+
+        <div id="mostrarTudo7" style="display: none;">
+
+            <button type="button" onclick="cancelar7()" class="cancelar7">CANCELAR</button>
+
+            <p class="TextCorTamanhoOpcao"><strong>COR</strong></p>
+            <div id="cor">
+
+                <button type="button" class="azulbebe7 cores7" value="AZUL BEBE">AZUL BEBÊ</button>
+                <button type="button" class="azulmarinho7 cores7" value="AZUL MARINHO">AZUL MARINHO</button>
+                <button type="button" class="branca7 cores7" value="BRANCA">BRANCA</button>
+                <button type="button" class="neon7 cores7" value="NEON">NEON</button>
+                <button type="button" class="preta7 cores7" value="PRETA">PRETA</button>
+                <button type="button" class="verdemilitar7 cores7" value="VERDE MILITAR">VERDE MILITAR</button>
+            </div>
+
+            <div id="imagemSapato7"></div>
+
+            <p class="TextCorTamanhoOpcao"><strong>TAMANHO</strong></p>
+            <div id="tamanho">
+                <button type="button" class="tamanhos7" value="33/34">33/34</button>
+                <button type="button" class="tamanhos7" value="35/36">35/36</button>
+                <button type="button" class="tamanhos7" value="37/38">37/38</button>
+                <button type="button" class="tamanhos7" value="39/40">39/40</button>
+                <button type="button" class="tamanhos7" value="39/40">41/42</button>
+                <button type="button" class="tamanhos7" value="39/40">43/44</button>
+
+
+            </div>
+            <div id="opcao">
+                <label for=""><p class="TextCorTamanhoOpcao"><strong>QUANTIDADE</strong></p></label>
+                <select id="opcoes7" name="opcao">
+                    <option>---</option>
+                    <option value="01 PAR">01 PAR</option>
+                    <option value="02 PARES">02 PARES</option>
+                    <option value="03 PARES">03 PARES</option>
+                    <option value="04 PARES">04 PARES</option>
+                    <option value="05 PARES">05 PARES</option>
+                    <option value="06 PARES">06 PARES</option>
+                    <option value="07 PARES">07 PARES</option>
+                    <option value="08 PARES">08 PARES</option>
+                    <option value="09 PARES">09 PARES</option>
+                    <option value="10 PARES">10 PARES</option>
+                </select>
+            </div>
+            <div class="botConcluinr">
+                <button type="button" class="concluir7" data-text8="PARA HOMENS" data-value8="120.00">
+                    CONCLUIR
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

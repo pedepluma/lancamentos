@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*titulo de cada topico*/
+.tituloA{
+    margin-bottom: 15px;
+    color: #96206F;
+    font-size: 22px;
+    font-family: 'Circular', sans-serif;
+}
+
+.tituloA2,.tituloA3,.tituloA4,.tituloA5,.tituloA6,.tituloA7,.tituloA8{
+    margin-top: 100px;
+}
+/*Texto de cada topico*/
+.textoA1{
+    text-align: justify;
+    width: 340px;
+    margin-bottom: 15px;
+    font-family: 'Arial Rounded MS Bold', sans-serif;
+    font-size: 15px;
+
+}
+
+/*TITULO de COR TAMANHO E OPÇÃO*/
+.TextCorTamanhoOpcao{
+    font-family: 'Arial Rounded MS Bold', sans-serif;
+}
+
+/*centralizando os layout/caixas*/
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    max-width: 390px;
+    margin: 50px auto;
+
+}
+
+/*imagens*/
+.produto {
+    width: 300px;
+    height: 300px;
+}
+
+#imagemSapato,#imagemSapato1,#imagemSapato2,#imagemSapato3,#imagemSapato4,#imagemSapato5,#imagemSapato6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#fotosImagem {
+    width: 300px;
+    height: 300px;
+}
+
+.logo{
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+/*definição de cada botão cor e tamahno*/
+.cores,.cores1,.cores2,.cores3,.cores4,.cores5,.cores6,.cores7,
+.tamanhos,.tamanhos1,.tamanhos2,.tamanhos3,.tamanhos4,.tamanhos5,.tamanhos6,.tamanhos7 {
+    color: black;
+    background-color: white;
+    font-size: 12px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Circular', sans-serif;  font-family: 'Circular', sans-serif;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px;
+    border: 1px solid;
+    width: 150px;
+}
+
+/*definição do layout onde estão os botões */
+#cor,
+#tamanho, #opçao {
+    margin: 15px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/*definição da div botão concluir */
+.botConcluinr {
+    margin: 50px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*definição do botão concluir */
+.concluir,.concluir1,.concluir2,.concluir2,.concluir3,.concluir4,.concluir5,.concluir6,.concluir7 {
+    font-family: 'Circular', sans-serif;
+    border-radius: 50px 50px;
+    background-color: #96206F;
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+.adquirir,.adquirir1,.adquirir2,.adquirir3,.adquirir4,.adquirir5,.adquirir6,.adquirir7  {
+    margin: 15px 0px 20px 0px;
+    font-family: 'Circular', sans-serif;
+    border-radius: 20px 20px;
+    background-color: #96206F;
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+.cancelar,.cancelar1,.cancelar2,.cancelar3,.cancelar4,.cancelar5,.cancelar6,.cancelar7{
+    width: 100px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 25px 0px 30px 0px;
+    background-color: rgb(253, 75, 75);
+    color: white;
+    font-family: 'Circular', sans-serif;
+    border: 1px solid black;
+}
+
