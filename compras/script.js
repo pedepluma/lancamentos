@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cor = sessionStorage.getItem('escolhaCor');
     const tamanho = sessionStorage.getItem('escolhaTamanho');
     const quantidade = sessionStorage.getItem('opcaoQuantidade')
-    // const quantidade
-    
+
+    // const quantidade    
     document.querySelector('#nomeproduto').innerHTML = `
 <span style="font-weight: bold;">PRODUTO: </span> ${nomeModelo} - <span style="font-weight: bold;"> VALOR R$</span> ${valorModelo.toFixed(2)}
     `;
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#quantidade').innerHTML = `
     <span style="font-weight: bold;"> QUANTIDADE: </span> ${quantidade}
     `
-
+//----------------ENVIAR ZAP
     function enviarZap() {
         const textoParaEnviar = `
     *PRODUTO:* ${nomeModelo}
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     *QUANTIDADE:* ${quantidade}
     `
         const codigoPais = '55';
-        const numeroTelefone = '87991614277';
-
+        //const numeroTelefone = '87991614277';
+        const numeroTelefone = '87988152272';
         const linkWhatsApp = `https://wa.me/${codigoPais}${numeroTelefone}?text=${encodeURIComponent(textoParaEnviar)}`;
         window.open(linkWhatsApp, '_blank');
     }
