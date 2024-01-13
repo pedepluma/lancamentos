@@ -60,31 +60,31 @@ document.addEventListener('click', (e) => {
         imagemSapato5.innerHTML = "";
 
         if (el.classList.contains("azulbebe5")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMASALTINHO/azulbebe.png';
+            imagem.src = '/lancamentos/img-Index/PLUMASALTINHO/azulbebe.png';
             el.style.backgroundColor = "#77B8BA";
         }
         if (el.classList.contains("branco5")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMASALTINHO/branca.png';
+            imagem.src = '/lancamentos/img-Index/PLUMASALTINHO/branca.png';
             el.style.backgroundColor = "white";
         }
         if (el.classList.contains("laranjaclaro5")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMASALTINHO/laranjaclaro.png';
+            imagem.src = '/lancamentos/img-Index/PLUMASALTINHO/laranjaclaro.png';
             el.style.backgroundColor = "#FDD0B3";
         }
         if (el.classList.contains("neon5")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMASALTINHO/neon.png';
+            imagem.src = '/lancamentos/img-Index/PLUMASALTINHO/neon.png';
             el.style.backgroundColor = "#BCE14F";
         }
         if (el.classList.contains("preta5")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMASALTINHO/preta.png';
+            imagem.src = '/lancamentos/img-Index/PLUMASALTINHO/preta.png';
             el.style.backgroundColor = "black";
         }
         if (el.classList.contains("rosa5")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMASALTINHO/rosa.png';
+            imagem.src = '/lancamentos/img-Index/PLUMASALTINHO/rosa.png';
             el.style.backgroundColor = "#E29EAD";
         }
         if (el.classList.contains("vermelho5")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMASALTINHO/vermelho.png';
+            imagem.src = '/lancamentos/img-Index/PLUMASALTINHO/vermelho.png';
             el.style.backgroundColor = "#E12E4E";
         }
         

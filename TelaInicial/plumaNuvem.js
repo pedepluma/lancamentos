@@ -64,59 +64,59 @@ document.addEventListener('click', (e) => {
 
     if (el.classList.contains("bege")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/lilas.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/lilas.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/lilas.png';
       el.style.backgroundColor = "#A87AA9";
     }
     if (el.classList.contains("preto")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/preta.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/preta.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/preta.png';
       el.style.backgroundColor = "black";
     }
     if (el.classList.contains("amareloouro")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/amareloouro.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/amareloouro.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/amareloouro.png';
       el.style.backgroundColor = "#E0BA12";
     }
     if (el.classList.contains("laranja")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/laranja.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/laranja.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/laranja.png';
       el.style.backgroundColor = "#C84F22";
     }
     if (el.classList.contains("rosabebe")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/rosa.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/rosa.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/rosa.png';
       el.style.backgroundColor = "#E29EAD";
     }
     if (el.classList.contains("branco")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/branca.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/branca.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/branca.png';
       el.style.backgroundColor = "white";
     }
     if (el.classList.contains("azulmarinho")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/azulmarinho.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/azulmarinho.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/azulmarinho.png';
       el.style.backgroundColor = "#666F8C";
     }
     if (el.classList.contains("azulclaro")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/azulbebe.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/azulbebe.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/azulbebe.png';
       el.style.backgroundColor = "#61A2B0";
     }
     if (el.classList.contains("verdemilitar")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/verdemilitar.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/verdemilitar.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/verdemilitar.png';
       el.style.backgroundColor = "#6F735C";
     }
 
     if (el.classList.contains("nude")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/verdemilitar.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/nude.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/nude.png';
       el.style.backgroundColor = "#E3C9B9";
     }
 
     if (el.classList.contains("neon")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/verdemilitar.png';
-      imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/neon.png';
+      imagem.src = '/lancamentos/img-Index/PLUMANUVEM/neon.png';
       el.style.backgroundColor = "#BCE14F";
     }
     imagemSapato.appendChild(imagem);

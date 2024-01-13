@@ -60,35 +60,35 @@ document.addEventListener('click', (e) => {
         imagemSapato4.innerHTML = "";
 
         if (el.classList.contains("azulbebe4")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAPLATAFORMA/azulbebe.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAPLATAFORMA/azulbebe.jpeg';
             el.style.backgroundColor = "#C5DFE0";
         }
         if (el.classList.contains("branca4")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAPLATAFORMA/branca.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAPLATAFORMA/branca.jpeg';
             el.style.backgroundColor = "white";
         }
         if (el.classList.contains("neon4")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAPLATAFORMA/neon.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAPLATAFORMA/neon.jpeg';
             el.style.backgroundColor = "#DBEC46";
         }
         if (el.classList.contains("nude4")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAPLATAFORMA/nude.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAPLATAFORMA/nude.jpeg';
             el.style.backgroundColor = "#EACBB7";
         }
         if (el.classList.contains("preta4")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAPLATAFORMA/preta.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAPLATAFORMA/preta.jpeg';
             el.style.backgroundColor = "black";
         }
         if (el.classList.contains("rosa4")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAPLATAFORMA/rosa.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAPLATAFORMA/rosa.jpeg';
             el.style.backgroundColor = "#F487B1";
         }
         if (el.classList.contains("rosaescuro4")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAPLATAFORMA/rosaescuro.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAPLATAFORMA/rosaescuro.jpeg';
             el.style.backgroundColor = "#FC789D";
         }
         if (el.classList.contains("roxo4")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAPLATAFORMA/roxo.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAPLATAFORMA/roxo.jpeg';
             el.style.backgroundColor = "#C473DC";
         }
 

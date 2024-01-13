@@ -60,19 +60,19 @@ document.addEventListener('click', (e) => {
     imagemSapato3.innerHTML = "";
 
     if (el.classList.contains("neon3")) {
-      imagem.src = '/PedeAlgodao/img-Index/PLUMAKIDS/neon.jpeg';
+      imagem.src = '/lancamentos/img-Index/PLUMAKIDS/neon.jpeg';
       el.style.backgroundColor = "#E0BA12";
     }
     if (el.classList.contains("rosa3")) {
-      imagem.src = '/PedeAlgodao/img-Index/PLUMAKIDS/rosa.jpeg';
+      imagem.src = '/lancamentos/img-Index/PLUMAKIDS/rosa.jpeg';
       el.style.backgroundColor = "#E29EAD";
     }
     if (el.classList.contains("roxa3")) {
-      imagem.src = '/PedeAlgodao/img-Index/PLUMAKIDS/roxa.jpeg';
+      imagem.src = '/lancamentos/img-Index/PLUMAKIDS/roxa.jpeg';
       el.style.backgroundColor = "#666F8C";
     }
     if (el.classList.contains("vermelhaclara3")) {
-      imagem.src = '/PedeAlgodao/img-Index/PLUMAKIDS/vermelhoclaro.jpeg';
+      imagem.src = '/lancamentos/img-Index/PLUMAKIDS/vermelhoclaro.jpeg';
       el.style.backgroundColor = "#B83760";
     }
 

@@ -62,28 +62,28 @@ document.addEventListener('click', (e) => {
         imagemSapato6.innerHTML = "";
 
         if (el.classList.contains("azulmarinho6")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAMOCASSIM/azulmarinho.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAMOCASSIM/azulmarinho.jpeg';
             el.style.backgroundColor = "#666F8C";
         }
         if (el.classList.contains("azulpiscina6")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAMOCASSIM/azulpiscina.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAMOCASSIM/azulpiscina.jpeg';
             el.style.backgroundColor = "#3FB3CA";
         }
         if (el.classList.contains("verdepiscina6")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAMOCASSIM/verdepiscina.png';
+            imagem.src = '/lancamentos/img-Index/PLUMAMOCASSIM/verdepiscina.png';
             el.style.backgroundColor = "#8AECEF";
         }
         if (el.classList.contains("branca6")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAMOCASSIM/branca.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAMOCASSIM/branca.jpeg';
             el.style.backgroundColor = "white";
         }
         if (el.classList.contains("preto6")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAMOCASSIM/preto.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAMOCASSIM/preto.jpeg';
             el.style.backgroundColor = "black";
         }
         
         if (el.classList.contains("rosa6")) {
-            imagem.src = '/PedeAlgodao/img-Index/PLUMAMOCASSIM//rosa.jpeg';
+            imagem.src = '/lancamentos/img-Index/PLUMAMOCASSIM//rosa.jpeg';
             el.style.backgroundColor = "#E29EAD";
         }
         

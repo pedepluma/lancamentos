@@ -60,43 +60,43 @@ const comprar2 = () => {
       imagemSapato2.innerHTML = "";
   
       if (el.classList.contains("amareloouro2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/amarela.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/amarela.jpeg';
         el.style.backgroundColor = "#E0BA12";
       }
       if (el.classList.contains("azul2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/azulbebe.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/azulbebe.jpeg';
         el.style.backgroundColor = "#13C5FF";
       }
       if (el.classList.contains("azulmarinho2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/azulmarinho.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/azulmarinho.jpeg';
         el.style.backgroundColor = "#666F8C";
       }
       if (el.classList.contains("branco2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/branca.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/branca.jpeg';
         el.style.backgroundColor = "white";
       }
       if (el.classList.contains("marromclaro2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/marromclaro.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/marromclaro.jpeg';
         el.style.backgroundColor = "#B8B5AE";
       }
       if (el.classList.contains("neon2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/neon.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/neon.jpeg';
         el.style.backgroundColor = "#BCE14F";
       }
       if (el.classList.contains("nude2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/nude.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/nude.jpeg';
         el.style.backgroundColor = "#E3C9B9";
       }
       if (el.classList.contains("preto2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/preta.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/preta.jpeg';
         el.style.backgroundColor = "black";
       }
       if (el.classList.contains("rosa2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/rosa.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/rosa.jpeg';
         el.style.backgroundColor = "#E29EAD";
       }
       if (el.classList.contains("verdemilitar2")) {
-        imagem.src = '/PedeAlgodao/img-Index/PLUMACONFORT/verdemilitar.jpeg';
+        imagem.src = '/lancamentos/img-Index/PLUMACONFORT/verdemilitar.jpeg';
         el.style.backgroundColor = "#6F735C";
       }
 

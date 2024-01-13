@@ -60,27 +60,27 @@ document.addEventListener('click', (e) => {
     imagemSapato7.innerHTML = "";
 
     if (el.classList.contains("azulbebe7")) {
-      imagem.src = '/PedeAlgodao/img-Index/PARAHOMENS/azulbebe.png';
+      imagem.src = '/lancamentos/img-Index/PARAHOMENS/azulbebe.png';
       el.style.backgroundColor = "#77B8BA";
     }
     if (el.classList.contains("azulmarinho7")) {
-      imagem.src = '/PedeAlgodao/img-Index/PARAHOMENS/azulmarinho.png';
+      imagem.src = '/lancamentos/img-Index/PARAHOMENS/azulmarinho.png';
       el.style.backgroundColor = "#666F8C";
     }
     if (el.classList.contains("branca7")) {
-      imagem.src = '/PedeAlgodao/img-Index/PARAHOMENS/branca.png';
+      imagem.src = '/lancamentos/img-Index/PARAHOMENS/branca.png';
       el.style.backgroundColor = "white";
     }
     if (el.classList.contains("neon7")) {
-      imagem.src = '/PedeAlgodao/img-Index/PARAHOMENS/neon.png';
+      imagem.src = '/lancamentos/img-Index/PARAHOMENS/neon.png';
       el.style.backgroundColor = "#BCE14F";
     }
     if (el.classList.contains("preta7")) {
-      imagem.src = '/PedeAlgodao/img-Index/PARAHOMENS/preta.png';
+      imagem.src = '/lancamentos/img-Index/PARAHOMENS/preta.png';
       el.style.backgroundColor = "black";
     }
     if (el.classList.contains("verdemilitar7")) {
-      imagem.src = '/PedeAlgodao/img-Index/PARAHOMENS/verdemilitar.png';
+      imagem.src = '/lancamentos/img-Index/PARAHOMENS/verdemilitar.png';
       el.style.backgroundColor = "#6F735C";
     }
     imagemSapato7.appendChild(imagem);
