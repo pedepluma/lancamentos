@@ -102,7 +102,7 @@ document.addEventListener('click', (e) => {
 
     if (el.classList.contains("lanvada1")) {
       //imagem.src = '/PedeAlgodao/img-Index/PLUMANUVEM/verdemilitar.png';
-      imagem.src = '/lancamentos/img-Index/PLUMASTAR/roxa.png';
+      imagem.src = '/lancamentos/img-Index/PLUMASTAR/lavanda.png';
       el.style.backgroundColor = "#A973C9";
     }
 
