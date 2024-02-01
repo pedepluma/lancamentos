@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const concluirCompra = () => {
     //estrutura para usar a condição de obrigar escolher cor, tamanho e opção
     const coresSelecionadas = document.querySelector('.cores2:active');
-    const tamanhoSelecionado = document.querySelector('.tamanhos1:active');
+    const tamanhoSelecionado = document.querySelector('.tamanhos2:active');
     const opcaoSelecionada = document.getElementById('opcoes2').value;
 
     if (!coresSelecionadas && !tamanhoSelecionado && opcaoSelecionada === '---') {
