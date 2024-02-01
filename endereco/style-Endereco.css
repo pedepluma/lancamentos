@@ -42,59 +42,25 @@ label {
 
 /*Botão*/
 .acompanhamento {
-    background-color: rgba(71, 4, 97);
-    height: 50px;
-    width: 200px;
-    border-radius: 100px;
-    box-shadow: 1px 2px 20px;
-    border: rgba(71, 4, 97);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px 20px;
+    background-color: #96206F;
+    color: white;
+    font-size: 16px;
+    padding: 15px;
     cursor: pointer;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    color: rgb(254, 255, 253);
-    transition: .5s;
-    font-weight: bolder;
-}
-
-.acompanhamento:hover {
-    color: rgb(128, 205, 42);
-}
-
-.img-button {
-    width: 80px;
-    height: 80px;
-    margin: -15px;
-}
-
-.botano{
-display: flex;
-flex-direction: row;
-margin: 0px 0px 0px 80px;
+    font-weight: 600;
+    border: 1px solid black;
+    width: 200px;
 }
 
 
-.LOGO {
-    margin-bottom: 30px;
-    width: 250px;
-    height: 250px;
+.botano {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-
+    margin: auto;
 }
-
-@keyframes flutuar {
-    0% {
-        top: 0px;
-    }
-
-    100% {
-        top: 30px;
-    }
-}
-
 
 main {
     align-items: center;
@@ -112,11 +78,19 @@ main {
     margin: auto;
 }
 
-.retirada{
+.retirada {
     margin: auto;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     height: 100px;
     gap: 35px;
+}
+
+.logo {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
