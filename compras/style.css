@@ -13,14 +13,21 @@ section {
     gap: 10px;
 }
 
+/*Título h1*/
 .detalhamento {
     max-width: 400px;
     width: 380px;
     display: flex;
 }
 
-button{
-    margin: 100px 0px 20px 0px;
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    margin: 0px 0px 20px 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 20px 20px;
     background-color: #96206F;
@@ -32,14 +39,49 @@ button{
     border: 1px solid black;
 }
 
-.logo{
+.logo {
     margin: auto;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
 }
 
-h1{
-    margin-bottom: 100px;
+h1 {
+    margin-bottom: 10px;
+}
+
+/*mexe no conteúdo dentro da div mercadoria*/
+.mercadoria {
+    border: 2px solid #96206F;
+    width: 300px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+/*mexe no texto dentro da div conteudo*/
+.conteudo {
+    text-align: center;
+}
+
+/*mexe no texto valor*/
+.valor {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    margin: 30px 0px 30px 0px;
+}
+
+/*mexe no botão excluir*/
+.excluirItem {
+    display: flex;
+    background: none;
+    color: #96206F;
+    border: none;
+    margin: -170px 0px 0px 210px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+
+.excluirItem:hover {
+    color: red;
 }
