@@ -184,13 +184,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const NomeValorProduto = () => {
 
     // Obtenha a referência do botão usando um seletor mais específico
-    const botaoEnviar7 = document.querySelector(".concluir");
+    const botaoEnviar = document.querySelector(".concluir");
 
     // Verifique se o botão foi encontrado antes de prosseguir
-    if (botaoEnviar7) {
+    if (botaoEnviar) {
       // Obtenha os atributos do botão
-      const produto = botaoEnviar7.getAttribute('data-text1');
-      const valor = parseFloat(botaoEnviar7.getAttribute('data-value1'));
+      const produto = botaoEnviar.getAttribute('data-text1');
+      const valor = parseFloat(botaoEnviar.getAttribute('data-value1'));
 
       // Use o índice atual para criar chaves únicas no sessionStorage
       const TipoProduto = `escolhaProduto_${indiceProduto}`;

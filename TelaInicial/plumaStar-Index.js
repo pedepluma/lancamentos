@@ -130,48 +130,78 @@ document.addEventListener('click', (ev) => {
   }
 });
 
+ //-------------------------------------------------------------
 //PARTE QUE ARMAZENA NO SESSIONSTORAGE E MANDA
 document.addEventListener('DOMContentLoaded', () => {
+  // Inicialização de índices fora da função
+  let indiceCores = sessionStorage.length;
+  let indiceTamanhos = sessionStorage.length;
+  let indiceOpcao = sessionStorage.length;
 
   // Lógica para definir valores no sessionStorage
-  const definirValoresSessionStorage6 = () => {
-
-
+  const definirValoresSessionStorage = () => {
     // Ouvinte de evento para os botões de modelos (cores)
     const botaoModelos = document.querySelectorAll(".cores1");
+
     botaoModelos.forEach(corModelos => {
       corModelos.addEventListener("click", () => {
         const corModelo = corModelos.value;
-        sessionStorage.setItem('escolhaCor', corModelo);
-      })
-    })
+        const EscolhaCor = `cores_${indiceCores}`;
+        sessionStorage.setItem(EscolhaCor, corModelo);
+         });
+    });
 
     // Ouvinte de evento para os botões de tamanhos
     const botaoTamanhos = document.querySelectorAll(".tamanhos1");
     botaoTamanhos.forEach(tamanho => {
       tamanho.addEventListener("click", () => {
         const valorTamanho = tamanho.value;
-        sessionStorage.setItem('escolhaTamanho', valorTamanho);
-      })
-    })
+        const EscolhaTamanho = `tamanhos_${indiceTamanhos}`;
+        sessionStorage.setItem(EscolhaTamanho, valorTamanho);
+      });
+    });
 
     // Ouvinte de evento para a opção de quantidade
     document.getElementById('opcoes1').addEventListener('change', function () {
       const opcaoEscolhida = this.value;
-      sessionStorage.setItem('opcaoQuantidade', opcaoEscolhida);
-    })
-  }
+      const EscolhaOpcao = `opcoes_${indiceOpcao}`;
+      sessionStorage.setItem(EscolhaOpcao, opcaoEscolhida);
+    });
+  };
 
+  //----------------------------------------------------------------------------------------------------
+  // Declare os índices fora da função para que eles não sejam redefinidos a cada chamada da função
+  let indiceProduto = sessionStorage.length;
+  let indiceValor = sessionStorage.length;
   const NomeValorProduto = () => {
-    // Dados do botão "Concluir"
-    const botaoEnviar1 = document.querySelector(".concluir1");
-    const valorBotaoEnviar1 = parseFloat(botaoEnviar1.getAttribute('data-value2'));
-    const textoBotaoEnviar1 = botaoEnviar1.getAttribute('data-text2');
-    sessionStorage.setItem('valorProduto', valorBotaoEnviar1);
-    sessionStorage.setItem('nomeProduto', textoBotaoEnviar1);
-  }
 
-  const concluirCompra6 = () => {
+    // Obtenha a referência do botão usando um seletor mais específico
+    const botaoEnviar = document.querySelector(".concluir1");
+
+    // Verifique se o botão foi encontrado antes de prosseguir
+    if (botaoEnviar) {
+      // Obtenha os atributos do botão
+      const produto = botaoEnviar.getAttribute('data-text2');
+      const valor = parseFloat(botaoEnviar.getAttribute('data-value2'));
+
+      // Use o índice atual para criar chaves únicas no sessionStorage
+      const TipoProduto = `escolhaProduto_${indiceProduto}`;
+      const TipoProdutoValor = `escolhaProdutoValor_${indiceValor}`;
+
+      // Armazene os novos itens no sessionStorage
+      sessionStorage.setItem(TipoProduto, produto);
+      sessionStorage.setItem(TipoProdutoValor, valor);
+    }
+  };
+
+
+
+
+  //-------------------------------------------------------------
+
+
+
+  const concluirCompra = () => {
     //estrutura para usar a condição de obrigar escolher cor, tamanho e opção
     const coresSelecionadas = document.querySelector('.cores1:active');
     const tamanhoSelecionado = document.querySelector('.tamanhos1:active');
@@ -182,13 +212,13 @@ document.addEventListener('DOMContentLoaded', () => {
       return false;
     }
     // Redirecionar para a próxima página
-    //window.location.href = '/PedeAlgodao/CARRINHO/comprasFeitas.html';
     window.location.href = '/lancamentos/compras/comprasFeitas.html';
+
   }
-  definirValoresSessionStorage6();
+  definirValoresSessionStorage();
   document.querySelector(".concluir1").addEventListener("click", () => {
+    concluirCompra();
     NomeValorProduto();
-    concluirCompra6();
+
   })
 });
-
