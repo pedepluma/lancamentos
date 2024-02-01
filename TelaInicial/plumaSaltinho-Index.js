@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Lógica para definir valores no sessionStorage
   const definirValoresSessionStorage = () => {
     // Ouvinte de evento para os botões de modelos (cores)
-    const botaoModelos = document.querySelectorAll(".cores3");
+    const botaoModelos = document.querySelectorAll(".cores5");
 
     botaoModelos.forEach(corModelos => {
       corModelos.addEventListener("click", () => {
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Ouvinte de evento para os botões de tamanhos
-    const botaoTamanhos = document.querySelectorAll(".tamanhos3");
+    const botaoTamanhos = document.querySelectorAll(".tamanhos5");
     botaoTamanhos.forEach(tamanho => {
       tamanho.addEventListener("click", () => {
         const valorTamanho = tamanho.value;
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Ouvinte de evento para a opção de quantidade
-    document.getElementById('opcoes3').addEventListener('change', function () {
+    document.getElementById('opcoes5').addEventListener('change', function () {
       const opcaoEscolhida = this.value;
       const EscolhaOpcao = `opcoes_${indiceOpcao}`;
       sessionStorage.setItem(EscolhaOpcao, opcaoEscolhida);
@@ -154,13 +154,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const NomeValorProduto = () => {
 
     // Obtenha a referência do botão usando um seletor mais específico
-    const botaoEnviar = document.querySelector(".concluir3");
+    const botaoEnviar = document.querySelector(".concluir5");
 
     // Verifique se o botão foi encontrado antes de prosseguir
     if (botaoEnviar) {
       // Obtenha os atributos do botão
-      const produto = botaoEnviar.getAttribute('data-text4');
-      const valor = parseFloat(botaoEnviar.getAttribute('data-value4'));
+      const produto = botaoEnviar.getAttribute('data-text6');
+      const valor = parseFloat(botaoEnviar.getAttribute('data-value6'));
 
       // Use o índice atual para criar chaves únicas no sessionStorage
       const TipoProduto = `escolhaProduto_${indiceProduto}`;
@@ -181,9 +181,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const concluirCompra = () => {
     //estrutura para usar a condição de obrigar escolher cor, tamanho e opção
-    const coresSelecionadas = document.querySelector('.cores3:active');
-    const tamanhoSelecionado = document.querySelector('.tamanhos3:active');
-    const opcaoSelecionada = document.getElementById('opcoes3').value;
+    const coresSelecionadas = document.querySelector('.cores5:active');
+    const tamanhoSelecionado = document.querySelector('.tamanhos5:active');
+    const opcaoSelecionada = document.getElementById('opcoes5').value;
 
     if (!coresSelecionadas && !tamanhoSelecionado && opcaoSelecionada === '---') {
       alert("Para prosseguir, escolha: cor, tamanho e quantidade");
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
   definirValoresSessionStorage();
-  document.querySelector(".concluir3").addEventListener("click", () => {
+  document.querySelector(".concluir5").addEventListener("click", () => {
     concluirCompra();
     NomeValorProduto();
 
