@@ -76,7 +76,17 @@ document.addEventListener('DOMContentLoaded', () => {
   CriaDiv()
   document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
 
-  //------------------------ENDEREÇO-----
+
+
+
+
+
+
+
+
+
+
+ //------------------------ENDEREÇO-----
   //ENDEREÇO PARA ENTREGA
   const FormEnd = () => {
     let nomeRua = document.getElementById('nomeRua').value;
@@ -101,17 +111,18 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Por favor, preencha todos os campos do Endereço para Entrega.');
       return false; // Impede o envio do formulário se a validação falhar
     }
-  }
-  let botaoEndereco = document.querySelector("#botaoEndereco")
-  botaoEndereco.addEventListener("click", FormEnd=()=>{
-    enviarZap()
-  })
+};
+
+let botaoEndereco = document.querySelector("#botaoEndereco");
+botaoEndereco.addEventListener("click", () => {
+  FormEnd();
+  enviarZap();
+});
 
   //----------------------------------------------------------------------------
 
-
+const Entrega=()=>{
   let Retiradas = document.getElementsByName('entrega');
-
   for (var i = 0; i < Retiradas.length; i++) {
     Retiradas[i].addEventListener('click', naoRetirar);
   }
@@ -144,14 +155,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+}
+Entrega()
+
   let botaoRetirada = document.querySelector("#botaoRetirada")
-  botaoRetirada.addEventListener("click", naoRetirar=()=>{
-    enviarZap()
+  botaoRetirada.addEventListener("click", ()=>{
+    Entrega();
+    enviarZap();
   })
-
-
-
-  //-----------ENVIAR VIA ZAP
 
 
   function enviarZap() {
@@ -183,15 +194,35 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
       }
     }
-    textoParaEnviar += `\n*VALOR TOTAL GERAL:* * R$ ${somaTotal.toFixed(2)}`
-
+    textoParaEnviar += `\n*VALOR TOTAL GERAL:*  R$ ${somaTotal.toFixed(2)}`
     const codigoPais = '55';
     const numeroTelefone = '87991614277';
 
     const linkWhatsApp = `https://wa.me/${codigoPais}${numeroTelefone}?text=${encodeURIComponent(textoParaEnviar)}`;
     window.open(linkWhatsApp, '_blank');
   }
-  // let botaoFinalizar = document.querySelector("#finalizar") //ativa o botão de enviar os dados via zap
-  // botaoFinalizar.addEventListener("click", enviarZap)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
