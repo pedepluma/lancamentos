@@ -5,6 +5,7 @@
 }
 .PTexto{
     color:  #96206F;
+    font-size: 20px;
 }
 
 
@@ -24,17 +25,6 @@ body {
     width: 430px;
 
 }
-
-.estruturaCheckBox {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-label {
-    margin-top: -15px;
-}
-
 
 .tituloeNDEREÇO {
     font-size: 20px;
@@ -78,17 +68,13 @@ main {
     margin: 50px;
 }
 
-.labelPag {
-    margin: auto;
-}
-
 .retirada {
     margin: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 150px;
     height: 100px;
-    gap: 35px;
+    gap: 20px;
 }
 
 .logo {
