@@ -146,7 +146,9 @@ export function enviarZap() {
     textoParaEnviar += `
       \n*FORMA DE PAGAMENTO: *${formaPagamento} 
     `;
-  } else if (valorTroco) {
+  } 
+  
+  if (valorTroco) {
     textoParaEnviar += `
     \n*TROCO: * ${valorTroco}
     `;
