@@ -1,6 +1,6 @@
 
 let somaTotal = 0;
-const carrinhoCompras = () => {
+
   const container = document.querySelector('.conteudo');
 
 
@@ -69,18 +69,13 @@ const carrinhoCompras = () => {
         Apagar(div, chaveProduto, chaveValor, chaveQuantidade);
       }
     }
-    return somaTotal;
+
   }
-  CriaDiv()
+
   // Atualiza o valor total no documento
   document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
-
-}
-document.addEventListener('DOMContentLoaded', carrinhoCompras);
-
-
 //----------------------zap
-export function enviarZap(somaTotal) {
+export function enviarZap() {
  
   let textoParaEnviar = '';
 
