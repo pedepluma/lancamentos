@@ -1,6 +1,4 @@
 
-
-
 let somaTotal = 0;
 const carrinhoCompras = () => {
   const container = document.querySelector('.conteudo');
@@ -111,6 +109,7 @@ export function enviarZap() {
           *QUANTIDADE (PAR):* ${escolhaQuantidade}
           *VALOR TOTAL:* R$ ${soma.toFixed(2)}
         `;
+        somaTotal += soma;
     }
   }
 
@@ -144,16 +143,16 @@ export function enviarZap() {
 
   if (formaPagamento) {
     textoParaEnviar += `
-      \n*FORMA DE PAGAMENTO:* ${formaPagamento} 
+      \n*FORMA DE PAGAMENTO:*${formaPagamento} 
     `;
-  }
-
+  } 
+  
   if (valorTroco) {
     textoParaEnviar += `
     *TROCO:* ${valorTroco}
     `;
   }
-
+  
 
 
 
