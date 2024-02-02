@@ -142,7 +142,7 @@ export function enviarZap() {
 
   if (formaPagamento) {
     textoParaEnviar += `
-      \n*FORMA DE PAGAMENTO:*${formaPagamento} 
+      \n*FORMA DE PAGAMENTO:* ${formaPagamento} 
     `;
   } 
   
