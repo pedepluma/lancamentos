@@ -1,4 +1,6 @@
 
+
+
 let somaTotal = 0;
 const carrinhoCompras = () => {
   const container = document.querySelector('.conteudo');
@@ -76,38 +78,11 @@ const carrinhoCompras = () => {
   document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
 
 }
-carrinhoCompras()
-
-//FORMA DE PAGAMENTO
-const FormaPagamento = () => {
-  let formasPagamento = document.getElementsByName('pagamento');
-  for (let i = 0; i < formasPagamento.length; i++) {
-    formasPagamento[i].addEventListener('change', mostrarTroco);
-  }
-
-  function mostrarTroco() {
-    let escolhaPagamento = document.querySelector('input[name="pagamento"]:checked').value;
-    let trocoSection = document.getElementById('trocoSection');
-
-    if (escolhaPagamento === 'DINHEIRO') {
-      trocoSection.style.display = 'block';
-    } else {
-      trocoSection.style.display = 'none';
-    }
-  }
-}
-
-let enviar = document.querySelector("#enviarZap")
-enviar.addEventListener("click", () => {
-  FormaPagamento()
-  enviarZap();
-})
-
-document.addEventListener('DOMContentLoaded', FormaPagamento);
+document.addEventListener('DOMContentLoaded', carrinhoCompras);
 
 
 //----------------------zap
-function enviarZap() {
+export function enviarZap() {
 
 
   let textoParaEnviar = '';
@@ -142,6 +117,10 @@ function enviarZap() {
   const endereco = JSON.parse(sessionStorage.getItem('endereco')) || {};
   const retiradaProduto = sessionStorage.getItem('escolhaEntrega')
 
+  const formaPagamento = sessionStorage.getItem('formaPagamento');
+  const valorTroco = sessionStorage.getItem('Vtroco');
+
+
   // Verifica se o endereço foi preenchido
   const enderecoPreenchido = (endereco.nomeRua || endereco.numeroCasa || endereco.cep || endereco.cidade || endereco.bairro || endereco.referencia);
 
@@ -164,11 +143,12 @@ function enviarZap() {
 
   textoParaEnviar += `${enderecoTexto}`
 
+
   textoParaEnviar += `
-  \n*FORMA DE PAGAMENTO*
-           ${document.querySelector('input[name="pagamento"]:checked').value}
-           ${document.querySelector('input[name="pagamento"]:checked').value === 'DINHEIRO' && document.getElementById('valorTroco').value.trim() !== '' ? '\n*VALOR DE TROCO (R$)*\n' + document.getElementById('valorTroco').value : ''}
+  \n*FORMA DE PAGAMENTO: *${formaPagamento} 
+  \n*TROCO: * ${valorTroco} 
   `
+
 
   const codigoPais = '55';
   const numeroTelefone = '87991614277';
