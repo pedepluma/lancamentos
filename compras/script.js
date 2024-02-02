@@ -213,7 +213,7 @@ function enviarZap() {
 
   textoParaEnviar += ` \n*RETIRADA NO LOCAL*: ${retiradaProduto}`
 
-  textoParaEnviar += `${enderecoTexto}}`
+  textoParaEnviar += `${enderecoTexto}`
 
   const codigoPais = '55';
   const numeroTelefone = '87991614277';
