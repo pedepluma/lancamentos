@@ -7,9 +7,9 @@
 body {
     background-color: #ffffff;
     height: 1200px;
-    color: rgba(71, 4, 97);
+    color:  #96206F;
     font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
 }
 
@@ -34,10 +34,11 @@ label {
 
 
 .tituloeNDEREÇO {
+    font-size: 20px;
     margin-top: 50px;
     text-align: center;
-    color: rgba(71, 4, 97);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:  #96206F;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*Botão*/
