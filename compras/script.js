@@ -69,7 +69,7 @@ const carrinhoCompras = () => {
         Apagar(div, chaveProduto, chaveValor, chaveQuantidade);
       }
     }
-
+    return somaTotal;
   }
   CriaDiv()
   // Atualiza o valor total no documento
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', carrinhoCompras);
 
 
 //----------------------zap
-export function enviarZap() {
+export function enviarZap(somaTotal) {
  
   let textoParaEnviar = '';
 
