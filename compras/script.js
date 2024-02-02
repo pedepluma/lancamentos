@@ -1,7 +1,8 @@
 
-  const carrinhoCompras=()=>{
+let somaTotal = 0;
+ const carrinhoCompras=()=>{
     const container = document.querySelector('.conteudo');
-    let somaTotal = 0;
+    
   
     const Apagar = (div, chaveProduto, chaveValor, chaveQuantidade) => {
       let excluir = document.createElement('button');
@@ -108,11 +109,11 @@
     }
   };
 
-  let botaoEndereco = document.querySelector("#botaoEndereco");
-  botaoEndereco.addEventListener("click", () => {
-    FormEnd();
-    enviarZap();
-  });
+  // let botaoEndereco = document.querySelector("#botaoEndereco");
+  // botaoEndereco.addEventListener("click", () => {
+  //   FormEnd();
+  //   enviarZap();
+  // });
 
   //----------------------------------------------------------------------------
 
@@ -150,15 +151,17 @@
     }
   }
 
-  let botaoRetirada = document.querySelector("#botaoRetirada")
-  botaoRetirada.addEventListener("click", () => {
-    naoRetirar();
-       // window.location.href = '/lancamentos/compras/comprasFeitas.html';
-   // enviarZap();
-  })
+  // let botaoRetirada = document.querySelector("#botaoRetirada")
+  // botaoRetirada.addEventListener("click", () => {
+  //   naoRetirar();
+  //      // window.location.href = '/lancamentos/compras/comprasFeitas.html';
+  //  // enviarZap();
+  // })
 
 
   function enviarZap() {
+
+  
     let textoParaEnviar = '';
 
     for (let i = 0; i < sessionStorage.length; i++) {
@@ -196,4 +199,5 @@
   }
 
 
-
+  let botaoFinalizar = document.querySelector("#finalizar") //ativa o botão de enviar os dados via zap
+  botaoFinalizar.addEventListener("click", enviarZap)

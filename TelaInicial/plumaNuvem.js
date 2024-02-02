@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // Redirecionar para a próxima página
     //window.location.href = '/lancamentos/endereco/endereco.html';
-    window.location.href = '../endereco/endereco.html';
+    window.location.href = '../compras/comprasFeitas.html';
 
 
   }
