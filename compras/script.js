@@ -71,47 +71,37 @@ const carrinhoCompras = () => {
     }
 
   }
-
-  // Atualiza o valor total no documento
   CriaDiv()
+  // Atualiza o valor total no documento
   document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
 }
-
+carrinhoCompras()
 //FORMA DE PAGAMENTO
-// const FormaPagamento = () => {
-//   let formasPagamento = document.getElementsByName('pagamento');
-//   for (let i = 0; i < formasPagamento.length; i++) {
-//     formasPagamento[i].addEventListener('change', mostrarTroco);
-//   }
+const FormaPagamento = () => {
+  let formasPagamento = document.getElementsByName('pagamento');
+  for (let i = 0; i < formasPagamento.length; i++) {
+    formasPagamento[i].addEventListener('change', mostrarTroco);
+  }
 
-//   function mostrarTroco() {
-//     let escolhaPagamento = document.querySelector('input[name="pagamento"]:checked').value;
-//     let trocoSection = document.getElementById('trocoSection');
+  function mostrarTroco() {
+    let escolhaPagamento = document.querySelector('input[name="pagamento"]:checked').value;
+    let trocoSection = document.getElementById('trocoSection');
 
-//     if (escolhaPagamento === 'DINHEIRO') {
-//       trocoSection.style.display = 'block';
-//     } else {
-//       trocoSection.style.display = 'none';
-//     }
-//   }
-
-
-// }
-
-// let enviar = document.querySelector("#enviarZap")
-// enviar.addEventListener("click", () => {
-//   FormaPagamento()
-//   enviarZap();
-// })
-
-
-const IniciarPagina=()=>{
-  carrinhoCompras()
- // FormaPagamento()
+    if (escolhaPagamento === 'DINHEIRO') {
+      trocoSection.style.display = 'block';
+    } else {
+      trocoSection.style.display = 'none';
+    }
+  }
 }
 
-document.addEventListener('DOMContentLoaded', IniciarPagina);
+let enviar = document.querySelector("#enviarZap")
+enviar.addEventListener("click", () => {
+  FormaPagamento()
+  enviarZap();
+})
 
+document.addEventListener('DOMContentLoaded', FormaPagamento);
 
 
 //----------------------zap
