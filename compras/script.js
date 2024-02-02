@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', carrinhoCompras);
 
 //----------------------zap
 export function enviarZap() {
-
+  const Total = somaTotal
 
   let textoParaEnviar = '';
 
@@ -109,7 +109,6 @@ export function enviarZap() {
           *QUANTIDADE (PAR):* ${escolhaQuantidade}
           *VALOR TOTAL:* R$ ${soma.toFixed(2)}
         `;
-        somaTotal += soma;
     }
   }
 
@@ -135,7 +134,7 @@ export function enviarZap() {
            `;
   }
 
-  textoParaEnviar += `\n*VALOR TOTAL GERAL:*  R$ ${somaTotal.toFixed(2)}`
+  textoParaEnviar += `\n*VALOR TOTAL GERAL:*  R$ ${Total.toFixed(2)}`
 
   textoParaEnviar += ` \n\n*RETIRADA NO LOCAL*: ${retiradaProduto}`
 
