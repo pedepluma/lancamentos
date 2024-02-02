@@ -81,8 +81,7 @@ document.addEventListener('DOMContentLoaded', carrinhoCompras);
 
 //----------------------zap
 export function enviarZap() {
-  const Total = somaTotal
-
+ 
   let textoParaEnviar = '';
 
   for (let i = 0; i < sessionStorage.length; i++) {
@@ -100,7 +99,10 @@ export function enviarZap() {
 
 
     if (escolhaProduto && escolhaQuantidade && escolhaCores && escolhaTamanho && !isNaN(escolhaValor)) {
+
       const soma = escolhaValor * escolhaQuantidade;
+      somaTotal += escolhaValor * escolhaQuantidade;
+      
       textoParaEnviar += `
           \n*SANDÁLIA:* ${escolhaProduto}
           *VALOR:* R$ ${escolhaValor.toFixed(2)}
@@ -134,7 +136,7 @@ export function enviarZap() {
            `;
   }
 
-  textoParaEnviar += `\n*VALOR TOTAL GERAL:*  R$ ${Total.toFixed(2)}`
+  textoParaEnviar += `\n*VALOR TOTAL GERAL:*  R$ ${somaTotal.toFixed(2)}`
 
   textoParaEnviar += ` \n\n*RETIRADA NO LOCAL*: ${retiradaProduto}`
 
