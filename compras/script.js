@@ -101,8 +101,8 @@ const FormEnd = () => {
       bairro: bairro,
       referencia: referencia,
     };
-
     sessionStorage.setItem('endereco', JSON.stringify(endereco));
+    enviarZap();
   } else {
     alert('Por favor, preencha todos os campos do Endereço para Entrega.');
     return false; // Impede o envio do formulário se a validação falhar
@@ -110,17 +110,14 @@ const FormEnd = () => {
 };
 
 let botaoEndereco = document.querySelector("#botaoEndereco");
-botaoEndereco.addEventListener("click", () => {
-  FormEnd();
-  enviarZap();
-});
+botaoEndereco.addEventListener("click", FormEnd)
 
 // ENTREGA SIM OU NÃO----------------------------------------------------------------------------
 
 
 let Retiradas = document.getElementsByName('entrega');
 for (var i = 0; i < Retiradas.length; i++) {
-  Retiradas[i].addEventListener('click', naoRetirar);
+  Retiradas[i].addEventListener('click', Escolha);
 }
 
 function limparFormulario() {
@@ -132,7 +129,7 @@ function limparFormulario() {
   document.getElementById('referencia').value = '';
 }
 
-function naoRetirar() {
+function Escolha() {
   let escolhaEntrega = document.querySelector('input[name="entrega"]:checked');
   if (escolhaEntrega) {
     let NaoEntregar = document.querySelector('#myForm');
@@ -153,7 +150,7 @@ function naoRetirar() {
 
 let botaoRetirada = document.querySelector("#botaoRetirada")
 botaoRetirada.addEventListener("click", () => {
-  naoRetirar();
+  Escolha();
   enviarZap();
 })
 
@@ -211,7 +208,7 @@ function enviarZap() {
 
   textoParaEnviar += `\n*VALOR TOTAL GERAL:*  R$ ${somaTotal.toFixed(2)}`
 
-  textoParaEnviar += ` \n*RETIRADA NO LOCAL*: ${retiradaProduto}`
+  textoParaEnviar += ` \n\n*RETIRADA NO LOCAL*: ${retiradaProduto}`
 
   textoParaEnviar += `${enderecoTexto}`
 
