@@ -97,15 +97,17 @@ const FormEnd = () => {
       referencia: referencia,
     };
     sessionStorage.setItem('endereco', JSON.stringify(endereco));
-    enviarZap();
-  } else {
+    window.location.href = '/lancamentos/formapagamento/pagamento.html'
+    } else {
     alert('Por favor, preencha todos os campos do Endereço para Entrega.');
     return false; // Impede o envio do formulário se a validação falhar
   }
 };
 
 let botaoEndereco = document.querySelector("#botaoEndereco");
-botaoEndereco.addEventListener("click", FormEnd)
+botaoEndereco.addEventListener("click", ()=>{
+  FormEnd()
+})
 
 // ENTREGA SIM OU NÃO----------------------------------------------------------------------------
 
@@ -146,7 +148,7 @@ function Escolha() {
 let botaoRetirada = document.querySelector("#botaoRetirada")
 botaoRetirada.addEventListener("click", () => {
   Escolha();
-  enviarZap();
+  window.location.href = '/lancamentos/formapagamento/pagamento.html'
 })
 
 
@@ -175,6 +177,13 @@ const FormaPagamento = () => {
 
 
 }
+
+let enviar = document.querySelector("#enviarZap")
+enviar.addEventListener("click", () => {
+  FormaPagamento()
+  enviarZap();
+})
+
 
 document.addEventListener('DOMContentLoaded', () => {
   carrinhoCompras()
