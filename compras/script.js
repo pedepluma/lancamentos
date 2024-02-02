@@ -107,6 +107,7 @@ const FormEnd = () => {
 let botaoEndereco = document.querySelector("#botaoEndereco");
 botaoEndereco.addEventListener("click", ()=>{
   FormEnd()
+  window.location.href = '/lancamentos/formapagamento/pagamento.html'
 })
 
 // ENTREGA SIM OU NÃO----------------------------------------------------------------------------
@@ -151,32 +152,26 @@ botaoRetirada.addEventListener("click", () => {
   window.location.href = '/lancamentos/formapagamento/pagamento.html'
 })
 
+//FORMA DE PAGAMENTO
+const FormaPagamento = () => {
+  let formasPagamento = document.getElementsByName('pagamento');
+  for (let i = 0; i < formasPagamento.length; i++) {
+    formasPagamento[i].addEventListener('change', mostrarTroco);
+  }
+
+  function mostrarTroco() {
+    let escolhaPagamento = document.querySelector('input[name="pagamento"]:checked').value;
+    let trocoSection = document.getElementById('trocoSection');
+
+    if (escolhaPagamento === 'DINHEIRO') {
+      trocoSection.style.display = 'block';
+    } else {
+      trocoSection.style.display = 'none';
+    }
+  }
 
 
-
-
-
-
-// //FORMA DE PAGAMENTO
-// const FormaPagamento = () => {
-//   let formasPagamento = document.getElementsByName('pagamento');
-//   for (let i = 0; i < formasPagamento.length; i++) {
-//     formasPagamento[i].addEventListener('change', mostrarTroco);
-//   }
-
-//   function mostrarTroco() {
-//     let escolhaPagamento = document.querySelector('input[name="pagamento"]:checked').value;
-//     let trocoSection = document.getElementById('trocoSection');
-
-//     if (escolhaPagamento === 'DINHEIRO') {
-//       trocoSection.style.display = 'block';
-//     } else {
-//       trocoSection.style.display = 'none';
-//     }
-//   }
-
-
-// }
+}
 
 let enviar = document.querySelector("#enviarZap")
 enviar.addEventListener("click", () => {
@@ -187,7 +182,7 @@ enviar.addEventListener("click", () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   carrinhoCompras()
- // FormaPagamento()
+ FormaPagamento()
 });
 
 
@@ -262,7 +257,3 @@ function enviarZap() {
   const linkWhatsApp = `https://wa.me/${codigoPais}${numeroTelefone}?text=${encodeURIComponent(textoParaEnviar)}`;
   window.open(linkWhatsApp, '_blank');
 }
-
-
-// let botaoFinalizar = document.querySelector("#finalizar") //ativa o botão de enviar os dados via zap
-// botaoFinalizar.addEventListener("click", enviarZap)
