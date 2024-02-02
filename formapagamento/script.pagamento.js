@@ -36,20 +36,23 @@ const FormaPagamento = () => {
 
     const VerificarDados = () => {
         // Verifica se pelo menos uma forma de pagamento foi escolhida antes de prosseguir
-        if (!sessionStorage.getItem('formaPagamento')) {
+        
+        
+     if (!sessionStorage.getItem('formaPagamento')) {
             alert("Escolha uma forma de pagamento!");
             return true; // Impede a continuação se nenhuma forma de pagamento foi escolhida
         }
-        if (!sessionStorage.getItem('Vtroco')) {
+        else if (!sessionStorage.getItem('Vtroco')) {
             alert("Informe se precisa de troco e para quanto!");
             return true; // Impede a continuação se nenhuma forma de pagamento foi escolhida
+        } else{
+          enviarZap()
         }
     }
 
     document.querySelector("#Fpagamento").addEventListener("click", () => {
         Troco()
         VerificarDados()
-        enviarZap();
         formasPagamento()
     });
 };
