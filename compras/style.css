@@ -57,6 +57,7 @@ h1 {
     width: 300px;
     height: 180px;
     margin-bottom: 20px;
+    background-color: #ff01aa23;
 }
 
 /*mexe no texto dentro da div conteudo*/
@@ -68,7 +69,14 @@ h1 {
 .valor {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
+    width: 270px;
+    height: 35px;
     margin: 30px 0px 30px 0px;
+    background-color: #ff25b6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*mexe no botão excluir*/

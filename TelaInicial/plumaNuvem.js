@@ -220,8 +220,8 @@ document.addEventListener('DOMContentLoaded', () => {
       return false;
     }
     // Redirecionar para a próxima página
-    window.location.href = '/lancamentos/compras/comprasFeitas.html';
-
+   // window.location.href = '/lancamentos/compras/comprasFeitas.html';
+   window.location.href = '/compras/comprasFeitas.html';
 
   }
   definirValoresSessionStorage();
