@@ -19,15 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-//   //ENVIAR ZAP----------------------------------------------
-//   function enviarMensagemWhatsApp() {
+  //ENVIAR ZAP----------------------------------------------
+  function enviarMensagemWhatsApp() {
    
-//     const textoParaEnviar = `
-//            *
-//            \n*FORMA DE PAGAMENTO*
-//            ${document.querySelector('input[name="pagamento"]:checked').value}
-//            ${document.querySelector('input[name="pagamento"]:checked').value === 'DINHEIRO' && document.getElementById('valorTroco').value.trim() !== '' ? '\n*VALOR DE TROCO (R$)*\n' + document.getElementById('valorTroco').value : ''}
+    const textoParaEnviar = `
+           *
+           \n*FORMA DE PAGAMENTO*
+           ${document.querySelector('input[name="pagamento"]:checked').value}
+           ${document.querySelector('input[name="pagamento"]:checked').value === 'DINHEIRO' && document.getElementById('valorTroco').value.trim() !== '' ? '\n*VALOR DE TROCO (R$)*\n' + document.getElementById('valorTroco').value : ''}
           
-//        `; 
-//   }
+       `; 
+  }
 })
