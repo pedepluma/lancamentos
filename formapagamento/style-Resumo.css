@@ -8,22 +8,33 @@
 }
 
 section {
-    width: 450px;
+    width: 380px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
-    justify-content: center;
 }
+
 
 .formulario {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    gap: 40px;
 }
 
-label{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.inputClass{
+    margin: 0px 0px -55px 150px
 }
+
+
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
 
 /*Botão*/
 .botao {
@@ -41,12 +52,12 @@ label{
 }
 
 
-.botano{
+.botano {
     display: flex;
     flex-direction: row;
     margin: 50px 0px 0px 60px;
     width: 200px;
-    }
+}
 
 #valorTroco {
     width: 300px;
@@ -78,6 +89,6 @@ label{
 
 h1 {
     margin: 40px 0px 50px 30px;
-    color:#96206F;
+    color: #96206F;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
