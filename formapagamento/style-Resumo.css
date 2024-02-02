@@ -24,10 +24,16 @@ section {
 }
 
 .inputClass{
-    margin: 0px 0px -55px 150px
+    margin: 0px 0px 0px 150px
 }
 
+.labelPag{
+    margin: 0px 0px -65px 0px
+}
 
+#trocoSection{
+    margin: 20px 0px 0px 3em;
+}
 
 label {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

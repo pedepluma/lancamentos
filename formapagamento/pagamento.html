@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIDER AÇAÍ</title>
     <link rel="stylesheet" href="style-Resumo.css">
-    <script src="script-Resumo.js"></script>
+    <script src="../compras/script.js" defer></script>
 </head>
 
 <body>
@@ -16,14 +16,15 @@
         <div class="formulario">
             <br><br>
             
-            <input type="radio" class="inputClass" name="pagamento" id="pix" value="PIX">
             <label for="" class="labelPag">PIX</label>
-
-            <input type="radio" class="inputClass" name="pagamento" id="dinheiro" value="DINHEIRO">
+            <input type="radio" class="inputClass" name="pagamento" id="pix" value="PIX">
+           
             <label for="" class="labelPag">DINHEIRO</label>
-
-            <input type="radio" class="inputClass" name="pagamento" id="cartaoCredito" value="CARTÃO DE CRÉDITO">
+            <input type="radio" class="inputClass" name="pagamento" id="dinheiro" value="DINHEIRO">
+            
             <label for="" class="labelPag">CARTÃO</label>
+            <input type="radio" class="inputClass" name="pagamento" id="cartaoCredito" value="CARTÃO DE CRÉDITO">
+           
         </div>
 
         <div id="trocoSection" style="display: none;">
