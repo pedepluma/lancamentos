@@ -76,6 +76,8 @@ const carrinhoCompras = () => {
   document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
 }
 carrinhoCompras()
+
+
 //FORMA DE PAGAMENTO
 const FormaPagamento = () => {
   let formasPagamento = document.getElementsByName('pagamento');
