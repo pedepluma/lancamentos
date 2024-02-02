@@ -32,8 +32,7 @@ const carrinhoCompras = () => {
 
   const calcular = (escolhaValor, escolhaQuantidade) => {
     somaTotal += escolhaValor * escolhaQuantidade;
-    enviarZap(somaTotal)
-  };
+      };
 
   const CriaDiv = () => {
     for (let i = 0; i < sessionStorage.length; i++) {
@@ -81,7 +80,7 @@ document.addEventListener('DOMContentLoaded', carrinhoCompras);
 
 
 //----------------------zap
-export function enviarZap(somaTotal) {
+export function enviarZap() {
  
   let textoParaEnviar = '';
 
