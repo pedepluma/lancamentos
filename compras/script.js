@@ -120,7 +120,6 @@ export function enviarZap() {
   const formaPagamento = sessionStorage.getItem('formaPagamento');
   const valorTroco = sessionStorage.getItem('Vtroco');
 
-
   // Verifica se o endereço foi preenchido
   const enderecoPreenchido = (endereco.nomeRua || endereco.numeroCasa || endereco.cep || endereco.cidade || endereco.bairro || endereco.referencia);
 
@@ -143,11 +142,17 @@ export function enviarZap() {
 
   textoParaEnviar += `${enderecoTexto}`
 
+  if (formaPagamento) {
+    textoParaEnviar += `
+      \n*FORMA DE PAGAMENTO: *${formaPagamento} 
+    `;
+  } else if (valorTroco) {
+    textoParaEnviar += `
+    \n*TROCO: * ${valorTroco}
+    `;
+  }
+  
 
-  textoParaEnviar += `
-  \n*FORMA DE PAGAMENTO: *${formaPagamento} 
-  \n*TROCO: * ${valorTroco} 
-  `
 
 
   const codigoPais = '55';
