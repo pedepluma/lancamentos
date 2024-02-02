@@ -74,8 +74,8 @@ const carrinhoCompras = () => {
   CriaDiv()
   // Atualiza o valor total no documento
   document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
+  carrinhoCompras()
 }
-carrinhoCompras()
 
 
 //FORMA DE PAGAMENTO
