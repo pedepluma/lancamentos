@@ -1,62 +1,61 @@
 
 let somaTotal = 0;
 
-  const container = document.querySelector('.conteudo');
+const container = document.querySelector('.conteudo');
 
 
-  const Apagar = (div, chaveProduto, chaveValor, chaveQuantidade) => {
-    let excluir = document.createElement('button');
-    excluir.setAttribute("class", "excluirItem");
-    excluir.innerHTML = "REMOVER";
-    div.appendChild(excluir);
+const Apagar = (div, chaveProduto, chaveValor, chaveQuantidade) => {
+  let excluir = document.createElement('button');
+  excluir.setAttribute("class", "excluirItem");
+  excluir.innerHTML = "REMOVER";
+  div.appendChild(excluir);
 
-    excluir.addEventListener('click', function () {
-      //multiplica para depois subtrair o valor que foi excluido
-      const valorDivRemovida = parseFloat(sessionStorage.getItem(chaveValor)) * parseFloat(sessionStorage.getItem(chaveQuantidade));
+  excluir.addEventListener('click', function () {
+    //multiplica para depois subtrair o valor que foi excluido
+    const valorDivRemovida = parseFloat(sessionStorage.getItem(chaveValor)) * parseFloat(sessionStorage.getItem(chaveQuantidade));
 
-      container.removeChild(div); // Remove a div que contém o botão
-      removerSessionStorage(chaveProduto, chaveValor);
+    container.removeChild(div); // Remove a div que contém o botão
+    removerSessionStorage(chaveProduto, chaveValor);
 
-      // Subtrai o valor da div removida do somaTotal
-      somaTotal -= valorDivRemovida;
+    // Subtrai o valor da div removida do somaTotal
+    somaTotal -= valorDivRemovida;
 
-      // Atualiza o valor total no documento
-      document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
-    });
-  };
+    // Atualiza o valor total no documento
+    document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
+  });
+};
 
-  const removerSessionStorage = (chaveProduto, chaveValor) => {
-    sessionStorage.removeItem(chaveProduto);
-    sessionStorage.removeItem(chaveValor);
-  };
+const removerSessionStorage = (chaveProduto, chaveValor) => {
+  sessionStorage.removeItem(chaveProduto);
+  sessionStorage.removeItem(chaveValor);
+};
 
-  const calcular = (escolhaValor, escolhaQuantidade) => {
-    somaTotal += escolhaValor * escolhaQuantidade;
-      };
+const calcular = (escolhaValor, escolhaQuantidade) => {
+  somaTotal += escolhaValor * escolhaQuantidade;
+};
 
-  const CriaDiv = () => {
-    for (let i = 0; i < sessionStorage.length; i++) {
-      const chaveProduto = `escolhaProduto_${i}`;
-      const chaveValor = `escolhaProdutoValor_${i}`;
-      const chaveCores = `cores_${i}`;
-      const chaveTamanho = `tamanhos_${i}`;
-      const chaveQuantidade = `opcoes_${i}`;
+  for (let i = 0; i < sessionStorage.length; i++) {
+    const chaveProduto = `escolhaProduto_${i}`;
+    const chaveValor = `escolhaProdutoValor_${i}`;
+    const chaveCores = `cores_${i}`;
+    const chaveTamanho = `tamanhos_${i}`;
+    const chaveQuantidade = `opcoes_${i}`;
 
-      const escolhaProduto = sessionStorage.getItem(chaveProduto);
-      const escolhaValor = parseFloat(sessionStorage.getItem(chaveValor));
-      const escolhaCores = sessionStorage.getItem(chaveCores);
-      const escolhaTamanho = sessionStorage.getItem(chaveTamanho);
-      const escolhaQuantidade = parseFloat(sessionStorage.getItem(chaveQuantidade));
+    const escolhaProduto = sessionStorage.getItem(chaveProduto);
+    const escolhaValor = parseFloat(sessionStorage.getItem(chaveValor));
+    const escolhaCores = sessionStorage.getItem(chaveCores);
+    const escolhaTamanho = sessionStorage.getItem(chaveTamanho);
+    const escolhaQuantidade = parseFloat(sessionStorage.getItem(chaveQuantidade));
 
-      if (escolhaProduto && escolhaQuantidade && escolhaCores && escolhaTamanho && !isNaN(escolhaValor)) {
-        let div = document.createElement('div');
-        div.setAttribute("class", "mercadoria");
+    if (escolhaProduto && escolhaQuantidade && escolhaCores && escolhaTamanho && !isNaN(escolhaValor)) {
+      let div = document.createElement('div');
+      div.setAttribute("class", "mercadoria");
 
-        calcular(escolhaValor, escolhaQuantidade);
-        const soma = escolhaValor * escolhaQuantidade;
+      calcular(escolhaValor, escolhaQuantidade);
+      const soma = escolhaValor * escolhaQuantidade;
 
-        div.innerHTML =
-          `
+      div.innerHTML =
+        `
                 <br><br> <span style="font-weight: bold;">SANDÁLIA:</span> ${escolhaProduto}
                 <br> <span style="font-weight: bold;">VALOR UNITÁRIO:</span> R$ ${escolhaValor.toFixed(2)}
                 <br> <span style="font-weight: bold;">COR:</span> ${escolhaCores}
@@ -65,18 +64,16 @@ let somaTotal = 0;
                 <br><br> <span style="font-weight: bold;">VALOR TOTAL: R$ </span> ${soma.toFixed(2)}
               `;
 
-        container.appendChild(div);
-        Apagar(div, chaveProduto, chaveValor, chaveQuantidade);
-      }
+      container.appendChild(div);
+      Apagar(div, chaveProduto, chaveValor, chaveQuantidade);
     }
-
   }
 
-  // Atualiza o valor total no documento
-  document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
+// Atualiza o valor total no documento
+document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
 //----------------------zap
 export function enviarZap() {
- 
+
   let textoParaEnviar = '';
 
   for (let i = 0; i < sessionStorage.length; i++) {
@@ -96,7 +93,7 @@ export function enviarZap() {
     if (escolhaProduto && escolhaQuantidade && escolhaCores && escolhaTamanho && !isNaN(escolhaValor)) {
 
       const soma = escolhaValor * escolhaQuantidade;
-      
+
 
       textoParaEnviar += `
           \n*SANDÁLIA:* ${escolhaProduto}
@@ -141,14 +138,14 @@ export function enviarZap() {
     textoParaEnviar += `
       \n*FORMA DE PAGAMENTO:* ${formaPagamento} 
     `;
-  } 
-  
+  }
+
   if (valorTroco) {
     textoParaEnviar += `
     *TROCO:* ${valorTroco}
     `;
   }
-  
+
 
 
 
