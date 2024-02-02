@@ -157,26 +157,26 @@ botaoRetirada.addEventListener("click", () => {
 
 
 
-//FORMA DE PAGAMENTO
-const FormaPagamento = () => {
-  let formasPagamento = document.getElementsByName('pagamento');
-  for (let i = 0; i < formasPagamento.length; i++) {
-    formasPagamento[i].addEventListener('change', mostrarTroco);
-  }
+// //FORMA DE PAGAMENTO
+// const FormaPagamento = () => {
+//   let formasPagamento = document.getElementsByName('pagamento');
+//   for (let i = 0; i < formasPagamento.length; i++) {
+//     formasPagamento[i].addEventListener('change', mostrarTroco);
+//   }
 
-  function mostrarTroco() {
-    let escolhaPagamento = document.querySelector('input[name="pagamento"]:checked').value;
-    let trocoSection = document.getElementById('trocoSection');
+//   function mostrarTroco() {
+//     let escolhaPagamento = document.querySelector('input[name="pagamento"]:checked').value;
+//     let trocoSection = document.getElementById('trocoSection');
 
-    if (escolhaPagamento === 'DINHEIRO') {
-      trocoSection.style.display = 'block';
-    } else {
-      trocoSection.style.display = 'none';
-    }
-  }
+//     if (escolhaPagamento === 'DINHEIRO') {
+//       trocoSection.style.display = 'block';
+//     } else {
+//       trocoSection.style.display = 'none';
+//     }
+//   }
 
 
-}
+// }
 
 let enviar = document.querySelector("#enviarZap")
 enviar.addEventListener("click", () => {
@@ -187,7 +187,7 @@ enviar.addEventListener("click", () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   carrinhoCompras()
-  FormaPagamento()
+ // FormaPagamento()
 });
 
 
