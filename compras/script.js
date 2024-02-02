@@ -144,13 +144,13 @@ export function enviarZap() {
 
   if (formaPagamento) {
     textoParaEnviar += `
-      \n*FORMA DE PAGAMENTO: *${formaPagamento} 
+      \n*FORMA DE PAGAMENTO:*${formaPagamento} 
     `;
   } 
   
   if (valorTroco) {
     textoParaEnviar += `
-    \n*TROCO: * ${valorTroco}
+    *TROCO:* ${valorTroco}
     `;
   }
   
