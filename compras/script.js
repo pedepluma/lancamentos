@@ -73,7 +73,7 @@ const carrinhoCompras = () => {
   }
   CriaDiv()
   // Atualiza o valor total no documento
-  document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR TOTAL:</span> R$ ${somaTotal.toFixed(2)}`;
+  document.querySelector(".valor").innerHTML = `<span style="font-weight: bold;">VALOR GERAL:</span> R$ ${somaTotal.toFixed(2)}`;
 
 }
 document.addEventListener('DOMContentLoaded', carrinhoCompras);
@@ -141,7 +141,7 @@ export function enviarZap() {
            `;
   }
 
-  textoParaEnviar += `\n*VALOR TOTAL GERAL:*  R$ ${somaTotal.toFixed(2)}`
+  textoParaEnviar += `\n*VALOR GERAL:*  R$ ${somaTotal.toFixed(2)}`
 
   textoParaEnviar += ` \n\n*RETIRADA NO LOCAL*: ${retiradaProduto}`
 
